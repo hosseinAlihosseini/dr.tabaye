@@ -1,0 +1,283 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    direction: rtl;
+}
+h3{
+    margin: 0px;
+}
+.page-modal{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: none;
+}
+.modal{
+    width: 840px;
+    height: 460px;
+    margin: 0px 20px;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.modal-content{
+    width: 100%;
+    height: 410px;
+    margin-top: 50px;
+    background-image: url(../img/login-image.svg);
+    background-repeat: no-repeat;
+}
+.modal-div{
+    width: 50%;
+    height: 100%;
+}
+.modal-form{
+    width: 80%;
+    height: 100%;
+    margin-right: 15%;
+    border-radius: 25px;
+    background-color: #ffffff;
+}
+.modal-form h2::after{
+    content: " ";
+    position: absolute;
+    width: 90px;
+    height: 8px;
+    right: 0;
+    top: 40px;
+    background-color: #edca1f;
+}
+.login-form{
+    margin-top: 50px;
+}
+.login-form form label{
+    font-size: 16px;
+    font-weight: lighter;
+}
+.login-form form input{
+    display: block;
+    width: 95.5%;
+    height: 52px;
+    font-size: 16px;
+    outline: none;
+    padding-right: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+}
+.login-form form input:focus{
+    background-color: #f1f4f8;
+    border: 1px solid #707070;
+}
+.login-form form input::placeholder{
+    color: #757575;
+    font-family: "shabnam";
+}
+.login-form form button{
+    width: 99.7%;
+    height: 52px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    background-color: #00a4ae;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "shabnam";
+}
+.login-link{
+    display: flex;
+    height: 57px;
+    justify-content: space-around;
+    align-items: center;
+}
+.login-link a{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+    transition: 0.4s;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.login-link a:hover{
+    background-color:#ececec;
+}
+
+/* modal-signin */
+.modal-signin{
+    width: 980px;
+    height: 580px;
+    margin: 0px 20px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    display: none;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.modal-signin-content{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background-repeat: no-repeat;
+}
+.modal-signin-div{
+    width: 100%;
+    height: auto;
+}
+.modal-signin-form{
+    width: 90%;
+    height: 100%;
+    margin-right: 10%;
+}
+.modal-signin-form h2::after{
+    content: " ";
+    position: absolute;
+    width: 90px;
+    height: 8px;
+    right: 0;
+    top: 40px;
+    background-color: #edca1f;
+}
+.signin-form{
+    width: 90%;
+    margin-top: 40px;
+}
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.col{
+    width: 50%;
+    height: auto;
+}
+.col input{
+    width: 90%;
+    height: 52px;
+    font-size: 16px;
+    outline: none;
+    padding-right: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.signin-form form input[type=email],#form-numberphone{
+    display: block;
+    width: 95%;
+    height: 52px;
+    font-size: 16px;
+    outline: none;
+    padding-right: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+}
+.signin-form form input::placeholder{
+    color: #757575;
+    font-family: "shabnam";
+}
+.signin-form form input:focus,#form-numberphone:focus{
+    background-color: #f1f4f8;
+    border: 1px solid #707070;
+}
+.signin-form form button{
+    width: 97.5%;
+    height: 52px;
+    outline: none;
+    font-size: 18px;
+    border: none;
+    background-color: #00a4ae;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "shabnam";
+}
+#btn-signin{
+    outline: none;
+    color: #000000;
+    width: 97.5%;
+    height: 30px;
+    transition: 0.4s;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: "shabnam";
+    margin-bottom: 10px;
+}
+#btn-signin:hover{
+    background-color:#ececec;
+}
+
+.modal-signin-img{
+    width: 100%;
+    height: 411px;
+    background-image: url(../img/login-image.svg);
+    background-repeat: no-repeat;
+    margin-top: auto;
+}
+
+@media screen and (max-width : 800px){
+    .modal-form{
+        padding: 0px 15px;
+        width: 100%;
+        margin-right: 0%;
+    }
+}
+@media screen and (max-width:600px){
+    .modal-div{
+        width: auto;
+        padding: 0px 15px;
+    }
+    .modal-form{
+        padding: 0px;
+    }
+    .row{
+        display: block;
+    }
+    .col{
+        width: 100%;
+    }
+}
+@media screen and (max-width : 960px){
+    .modal-signin-content{
+        grid-template-columns: 1fr;
+
+    }
+    .modal-signin-img{
+        display: none;
+    }
+    .modal-signin-div{
+        padding: 0px 10px;
+    }
+    .modal-signin-form{
+        width: auto;
+        padding: 0px 10px;
+        margin-right: 0px;
+    }
+    .signin-form{
+        width: 100%;
+    }
+    .modal-signin-div{
+        padding: 0px;
+        margin: 0px;
+    }
+    .signin-form form input[type=email],#form-numberphone{
+        width: 97%;
+    }
+    .signin-form form button,#btn-signin{
+        width: 98.5%;
+    }
+    .col input{
+        width: 94%;
+    }
+}
